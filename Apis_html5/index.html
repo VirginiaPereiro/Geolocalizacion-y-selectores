@@ -6,6 +6,12 @@
         .dibujo:hover {
             cursor: pointer;
         }
+        #dragame {
+            width: 200px;height: 150px;border: palevioletred double 3px;
+        }
+        #dropeame {
+            width: 200px;height: 150px;border: greenyellow double 3px;
+        }
     </style>
 </head>
     <body>
@@ -13,6 +19,12 @@
         <!--<div id="dibujo"> 
                 Aquí voy a dibujar
             </div>-->
+        <div id="dragame" draggable="true">
+            A que no me arrastras
+        </div>
+        <div id="dropeame">
+            Suelta lo que quieras
+        </div>
         <div id="donde">
             <span id="latitud"></span>
             <span id="longitud"></span>
@@ -31,6 +43,11 @@
             <ul id="emails">
                 
             </ul>
+        </div>
+        <div>
+            <canvas id="micanvas">
+                
+            </canvas>
         </div>
         <script src="js/js1.js"></script>
     </body>
